@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 7%;
+    flex-wrap: wrap;
+
+}
+.white-box:hover {
+    box-shadow: 0px 2px 15px rgb(191, 198, 205);
+    transition: all 0.5s;
+  }
+  .blue-box:hover {
+    box-shadow: 0px 2px 15px rgb(39, 140, 241);
+    transition: all 0.5s;
+  }
+.blue-box{
+    background-color: blue;
+    width: 250px;
+    height: 65vh;
+    text-align: center;
+    border-radius: 5%;
+    padding: 30px;
+    color: white;
+
+}
+
+#circle{
+    border-radius: 50%;
+    background-color: rgba(58, 54, 74, 0.302);
+    height: 70px;
+    width: 70px;
+    /* align-items: center; */
+    margin: auto;
+    padding: 40px;
+    font-size: 27px;
+}
+/* white-box */
+.white-box{
+    background-color:white;
+    width: 300px;
+    height: 72vh;
+    padding-left: 20px;
+    padding-top:20px ;
+    border-radius:5% ;
+    
+   
+}
+.four-box{
+    display: flex;
+    align-items: center;
+    
+    margin: 5%;
+    border-radius: 5px ;
+    height: 8vh;
+    
+    
+}
+.four-box>svg{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#one{
+    /* border: 2px solid pink; */
+    background-color:rgba(255, 192, 203,0.75);
+    color:rgb(256, 121, 137);
+}
+#two{
+    /* border: 2px solid rgb(216, 216, 112); */
+    background-color:rgb(213, 213, 107);
+    color:rgb(247, 247, 5);
+    
+}
+
+#three{
+    /* border: 2px solid rgb(216, 216, 112); */
+    background-color:rgb(170, 227, 170);
+    color:rgb(19, 222, 19);
+    
+}
+#four{
+    /* border: 2px solid rgb(216, 216, 112); */
+    background-color:rgb(199, 232, 253);
+    color:rgb(31, 165, 249);
+    
+}
+
+
+#marks{
+    padding-left: 40%;
+}
+
+button{
+    width: 80%;
+    height: 7vh;
+    background-color: rgb(34, 34, 51);
+    border-radius: 20px;
+    font-size: larger;
+    color: white;
+    margin-left: 10%;
+    margin-top: 7%;
+
+
+}
