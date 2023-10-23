@@ -1,33 +1,49 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-.box{
+
+body {
     display: flex;
     justify-content: center;
-    align-items:center ;
-    margin-top: 7%;
-    flex-wrap: wrap;
-    background-color: white;
-
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.blue-box{
-    background-color: blue;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 22px;
+    /* overflow: hidden; */
+    /* height: 400px; */
+    /* align-content: stretch; */
+    box-shadow: 0px 2px 25px rgb(226, 222, 222);
+}
+
+.blue-box {
+    background-color: rgba(100, 65, 253, 255);
     width: 250px;
-    height: 65vh;
+    /* height: 100%; */
     text-align: center;
     border-radius: 5%;
     padding: 30px;
     color: white;
-    box-shadow: 0px 2px 15px rgb(39, 140, 241);
+    /* box-shadow: 0px 2px 15px rgb(39, 140, 241); */
     transition: all 0.5s;
 
 }
 
-#circle{
+#circle {
     border-radius: 50%;
-    background-color: rgba(58, 54, 74, 0.302);
+    background-color: rgba(70, 44, 221, 255);
+    box-shadow: inset 26px 0px 29px rgba(100, 65, 253, 255);
+    border: 1px ridge rgba(70, 44, 221, 255);
+    transform: rotate(260deg);
     height: 70px;
     width: 70px;
     /* align-items: center; */
@@ -35,72 +51,92 @@
     padding: 40px;
     font-size: 27px;
 }
-/* white-box */
-.white-box{
-    background-color:white;
-    width: 300px;
-    height: 72vh;
-    padding-left: 20px;
-    padding-top:20px ;
-    border-radius:5% ;
-    box-shadow: 0px 2px 15px rgb(191, 198, 205);
-    transition: all 0.5s;
-    
-   
+
+.circle_content {
+    transform: rotate(100deg);
+    margin-right: -10px;
+    margin-top: -10px;
 }
-.four-box{
+
+/* white-box */
+.white-box {
+    width: 280px;
+    /* height: 100%; */
+    padding: 40px 20px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.four-box {
     display: flex;
     align-items: center;
-    
-    margin: 5%;
-    border-radius: 5px ;
-    height: 8vh;
-    
-    
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 20px;
+
 }
-.four-box>svg{
-    padding-left: 10px;
-    padding-right: 10px;
+
+.score_box_title {
+    display: flex;
+    gap: 10px;
 }
-#one{
+
+#one {
     /* border: 2px solid pink; */
-    background-color:rgba(255, 192, 203,0.75);
-    color:rgb(256, 121, 137);
+    background-color: rgba(255, 246, 245, 255);
+    color: red;
 }
-#two{
+
+#two {
     /* border: 2px solid rgb(216, 216, 112); */
-    background-color:rgb(213, 213, 107);
-    color:rgb(247, 247, 5);
-    
+    background-color: rgba(255, 251, 242, 255);
+    color: gold;
+
 }
 
-#three{
+#three {
     /* border: 2px solid rgb(216, 216, 112); */
-    background-color:rgb(170, 227, 170);
-    color:rgb(19, 222, 19);
-    
+    background-color: rgba(242, 251, 250, 255);
+    color: rgba(144, 217, 206, 255);
+
 }
-#four{
+
+#four {
     /* border: 2px solid rgb(216, 216, 112); */
-    background-color:rgb(199, 232, 253);
-    color:rgb(31, 165, 249);
-    
+    background-color: rgba(243, 243, 253, 255);
+    color: darkblue;
+
 }
 
 
-#marks{
-    padding-left: 40%;
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
-button{
+.button_container button {
     width: 80%;
-    height: 7vh;
-    background-color: rgb(34, 34, 51);
+    background-color: rgb(38, 30, 77);
     border-radius: 20px;
     font-size: larger;
     color: white;
-    margin-left: 10%;
-    margin-top: 7%;
+    padding: 7px;
 
+}
+
+#marks {
+    color: darkblue;
+    letter-spacing: 1px;
+}
+
+.button_container button:hover {
+    background-color: rgb(75, 62, 139);
+    cursor: pointer;
 
 }
